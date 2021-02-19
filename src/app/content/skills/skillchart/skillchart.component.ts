@@ -24,7 +24,7 @@ export class SkillchartComponent implements OnInit, AfterViewInit {
         labels: ['Java', 'Python', 'C++', 'C', 'Javascript', 'Typescript', 'PHP'],
         datasets: [{
           label: 'Relative Experience',
-          data: [90, 85, 60, 65, 74, 70, 60],
+          data: [90, 85, 60, 65, 74, 65, 70],
           backgroundColor: [
             'rgba(255, 99, 132, 1)',
             'rgba(54, 162, 235, 1)',
