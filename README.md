@@ -1,5 +1,7 @@
 # PersonalSite
 
+This is the portfolio I made with angular for my personal use. It has been deployed on github pages. Have a look at it [HERE](https://am-coder.github.io/personal-site/) and do give your suggestions :slightly_smiling_face: . <br/>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
 
 ## Development server
