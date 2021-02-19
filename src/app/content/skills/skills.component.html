@@ -1,0 +1,93 @@
+<div class="container-fluid about">
+    <div class="btn-group mb-3" role="group">
+        <button type="button"   
+            [ngClass]="menuType == 3 ? 'is-active':'' " 
+            class="btn btn-primary-outline ripple" 
+            (click)="switchMenu(3)">Programming Languages
+        </button>
+        <button type="button" 
+            [ngClass]="menuType == 0 ? 'is-active':'' " 
+            class="btn btn-primary-outline ripple" 
+            (click)="switchMenu(0)">Web Dev
+        </button>
+        <button type="button" 
+            [ngClass]="menuType == 1 ? 'is-active':'' "
+            class="btn btn-primary-outline ripple" 
+            (click)="switchMenu(1)">Machine Learning
+        </button>
+        <button type="button" 
+            [ngClass]="menuType == 2 ? 'is-active':'' "
+            class="btn btn-primary-outline ripple" 
+            (click)="switchMenu(2)">OS Familiarity
+        </button>
+        <button type="button" 
+            [ngClass]="menuType == 4 ? 'is-active':'' "
+            class="btn btn-primary-outline ripple" 
+            (click)="switchMenu(4)">More Dev Tools
+        </button>
+    </div>
+    <div class="row justify-content-center " *ngIf="menuType === 0">
+        <div>
+            FRONT END STUFF
+            <br>
+            <img src="assets/images/skills/html5.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/css.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/javascript.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/angular.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/bootstrap4.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/jquery.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/typescript.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+                        
+        </div>
+        <hr>
+
+        <div>
+            BACK END STUFF 
+            <br>
+            <img src="assets/images/skills/django.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/spring.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/php.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/restapi.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/hibernate.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/swagger.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+
+
+
+            <img src="assets/images/skills/mysql.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/sqlite.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/postgresql.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            <img src="assets/images/skills/mongodb.svg" class="img-fluid mr-3 mb-3" alt="Responsive image">
+            
+        </div>
+        
+    </div>
+    <div class="row justify-content-center" *ngIf="menuType === 1">
+        <img src="assets/images/skills/tensorflow.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/sklearn.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/keras.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/pandas.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/jupyter.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+    </div>
+    <div class="row justify-content-center" *ngIf="menuType === 2">
+        <img src="assets/images/skills/ubuntu.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/windows.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+
+    </div>
+    <div class="row justify-content-center" *ngIf="menuType === 3">
+        <img src="assets/images/skills/java.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/python.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/cpp.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/c.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">     
+        <img src="assets/images/skills/javascript.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">     
+        <img src="assets/images/skills/typescript.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">     
+        <img src="assets/images/skills/php.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">     
+    </div>
+
+    <div class="row justify-content-center" *ngIf="menuType === 4">
+        <img src="assets/images/skills/git.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/jira.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/pytest.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/travis.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        <img src="assets/images/skills/bamboo.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+    </div>
+</div>

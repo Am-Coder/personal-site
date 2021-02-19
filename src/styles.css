@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%;
+    background-image: url(assets/images/bgi.jpg);
+    background-size: cover;
+       
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.about {
+    /* background-color: white; */
+    backdrop-filter: blur(20px);
+    color: white;
+    height: 100%;
+}
+router-outlet ~ * {
+    position: absolute;
+    width: 80%;
+    max-height: 100%;
+    margin-top: 2vh;
+}
+
+
+.btn {
+    color: white;
+    transition: 0.1s ease-in;
+}
+.btn:hover {
+    color: white;
+    transform: translateY(1px);
+}
+img {
+    transition: 0.2s ease-in;
+}
+img:hover {
+    transform: translateY(4px);
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }

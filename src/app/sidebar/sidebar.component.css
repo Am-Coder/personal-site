@@ -1,0 +1,15 @@
+.is-active {
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    transform: translateY(4px);
+
+}
+
+.sidebar {
+    background-color: transparent;
+}
+
+img {
+    border-radius: 50%;
+}
