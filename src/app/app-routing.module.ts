@@ -5,6 +5,7 @@ import { ContactComponent } from './content/contact/contact.component';
 import { ContentComponent } from './content/content.component';
 import { EducationComponent } from './content/education/education.component';
 import { ExperienceComponent } from './content/experience/experience.component';
+import { ProjectsComponent } from './content/projects/projects.component';
 import { SkillsComponent } from './content/skills/skills.component';
 
 const appRoutes: Routes = [
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
         { path: 'skills', component: SkillsComponent, data: {animation: 'skills'}},
         { path: 'experience', component: ExperienceComponent, data: {animation: 'experience'}},
         { path: 'contact', component: ContactComponent, data: {animation: 'contact'}},    
+        { path: 'projects', component: ProjectsComponent, data: {animation: 'projects'}},
     ] 
     },
 ]

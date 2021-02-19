@@ -12,6 +12,7 @@ import { SkillsComponent } from './content/skills/skills.component';
 import { ExperienceComponent } from './content/experience/experience.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SkillchartComponent } from './content/skills/skillchart/skillchart.component';
+import { ProjectsComponent } from './content/projects/projects.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { SkillchartComponent } from './content/skills/skillchart/skillchart.comp
     SkillsComponent,
     ExperienceComponent,
     SkillchartComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
