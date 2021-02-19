@@ -11,6 +11,7 @@ import { ContactComponent } from './content/contact/contact.component';
 import { SkillsComponent } from './content/skills/skills.component';
 import { ExperienceComponent } from './content/experience/experience.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SkillchartComponent } from './content/skills/skillchart/skillchart.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { AppRoutingModule } from './app-routing.module';
     ContactComponent,
     SkillsComponent,
     ExperienceComponent,
+    SkillchartComponent,
   ],
   imports: [
     BrowserModule,

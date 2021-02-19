@@ -69,18 +69,38 @@
         <img src="assets/images/skills/jupyter.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
     </div>
     <div class="row justify-content-center" *ngIf="menuType === 2">
-        <img src="assets/images/skills/ubuntu.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
-        <img src="assets/images/skills/windows.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
+        
+        <div class="col">
+            <img src="assets/images/skills/ubuntu.svg" 
+            class="img-fluid mr-5 mb-5 mt-3 os" 
+            alt="Ubuntu">
+            <div class="progress mb-5" style="width: 60%;">
+                <div class="progress-bar progress-bar-success" 
+                role="progressbar" aria-valuenow="100"
+                aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    Ubuntu
+                </div>
+            </div>
+            
+        </div>
+        <div class="col">
+            <img src="assets/images/skills/windows.svg" 
+            class="img-fluid mr-5 mb-5 mt-3 os" alt="windows">
+    
+            <div class="progress mb-5" style="width: 60%;">
+                <div class="progress-bar progress-bar-success" 
+                role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                Windows
+                </div>
+            </div>
+        </div>
+
 
     </div>
-    <div class="row justify-content-center" *ngIf="menuType === 3">
-        <img src="assets/images/skills/java.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
-        <img src="assets/images/skills/python.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
-        <img src="assets/images/skills/cpp.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">
-        <img src="assets/images/skills/c.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">     
-        <img src="assets/images/skills/javascript.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">     
-        <img src="assets/images/skills/typescript.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">     
-        <img src="assets/images/skills/php.svg" class="img-fluid mr-5 mb-5" alt="Responsive image">     
+    <div class="row justify-content-center" 
+        *ngIf="menuType === 3;">
+        <app-skillchart style="width: 100%;"></app-skillchart>
     </div>
 
     <div class="row justify-content-center" *ngIf="menuType === 4">
