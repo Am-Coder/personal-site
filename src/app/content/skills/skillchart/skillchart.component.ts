@@ -48,6 +48,12 @@ export class SkillchartComponent implements OnInit, AfterViewInit {
         }]
       },
       options: {
+        title: {
+          display: true,
+          text: 'Based On Lines Of Code I have written',
+          fontColor: 'white',
+          fontSize: 14
+        },
         scales: {
           yAxes: [{
             ticks: {
@@ -70,7 +76,8 @@ export class SkillchartComponent implements OnInit, AfterViewInit {
               color: "#fff",
               lineWidth:2
             }
-          }]
+          }],
+
 
 
         },

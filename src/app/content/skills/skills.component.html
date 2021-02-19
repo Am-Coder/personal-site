@@ -1,5 +1,5 @@
 <div class="container-fluid about">
-    <div class="btn-group mb-3" role="group">
+    <div>
         <button type="button"   
             [ngClass]="menuType == 3 ? 'is-active':'' " 
             class="btn btn-primary-outline ripple" 
@@ -26,7 +26,7 @@
             (click)="switchMenu(4)">More Dev Tools
         </button>
     </div>
-    <div class="row justify-content-center " *ngIf="menuType === 0">
+    <div class="row justify-content-center mt-3 " *ngIf="menuType === 0">
         <div>
             FRONT END STUFF
             <br>
@@ -61,18 +61,18 @@
         </div>
         
     </div>
-    <div class="row justify-content-center" *ngIf="menuType === 1">
+    <div class="row justify-content-center mt-3" *ngIf="menuType === 1">
         <img src="assets/images/skills/tensorflow.svg" class="img-fluid mr-5 mb-5" alt="tensorflow">
         <img src="assets/images/skills/sklearn.svg" class="img-fluid mr-5 mb-5" alt="sklearn">
         <img src="assets/images/skills/keras.svg" class="img-fluid mr-5 mb-5" alt="keras">
         <img src="assets/images/skills/pandas.svg" class="img-fluid mr-5 mb-5" alt="pandas">
         <img src="assets/images/skills/jupyter.svg" class="img-fluid mr-5 mb-5" alt="Jupyter">
     </div>
-    <div class="row justify-content-center" *ngIf="menuType === 2">
+    <div class="row justify-content-center mt-3" *ngIf="menuType === 2">
         
         <div class="col">
             <img src="assets/images/skills/ubuntu.svg" 
-            class="img-fluid mr-5 mb-5 mt-3 os" 
+            class="img-fluid mr-5 mb-5 os" 
             alt="Ubuntu">
             <div class="progress mb-5" style="width: 60%;">
                 <div class="progress-bar progress-bar-success" 
@@ -85,7 +85,7 @@
         </div>
         <div class="col">
             <img src="assets/images/skills/windows.svg" 
-            class="img-fluid mr-5 mb-5 mt-3 os" alt="windows">
+            class="img-fluid mr-5 mb-5 os" alt="windows">
     
             <div class="progress mb-5" style="width: 60%;">
                 <div class="progress-bar progress-bar-success" 
@@ -98,12 +98,12 @@
 
 
     </div>
-    <div class="row justify-content-center" 
+    <div class="row justify-content-center mt-3" 
         *ngIf="menuType === 3;">
         <app-skillchart style="width: 100%;"></app-skillchart>
     </div>
 
-    <div class="row justify-content-center" *ngIf="menuType === 4">
+    <div class="row justify-content-center mt-3" *ngIf="menuType === 4">
         <img src="assets/images/skills/git.svg" class="img-fluid mr-5 mb-5" alt="git">
         <img src="assets/images/skills/jira.svg" class="img-fluid mr-5 mb-5" alt="jira">
         <img src="assets/images/skills/pytest.svg" class="img-fluid mr-5 mb-5" alt="pytest">
