@@ -1,19 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { 
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-image: url(assets/images/bgi.jpg);
     background-size: cover;
+    color: white;
        
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-@media (max-width: 650px) {
-	body.custom-background {
-		background-attachment: scroll;
-	}
-}
+
+
 .about {
-    /* background-color: white; */
     backdrop-filter: blur(20px);
     color: white;
     height: 100%;
@@ -54,3 +52,23 @@ img:hover {
     background-size: 100%;
     transition: background 0s;
   }
+
+  /* For Mobile Devices */
+@media (max-width: 770px) {
+    html, body {
+        background-size: 100vw 100vh;
+        background-image: url(assets/images/bgi.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-x:hidden;
+    }
+    body {
+        position: relative;
+    }
+    router-outlet ~ * {
+        position: absolute;
+        width: 90%;
+        max-height: 100%;
+        margin-top: 2vh;
+    }
+}

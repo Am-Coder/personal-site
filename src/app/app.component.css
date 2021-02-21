@@ -1,0 +1,11 @@
+
+@media screen and (max-width: 770px) {
+    .sb {
+        position: fixed;
+        z-index: 11;
+    }
+    
+    .co {
+        z-index: 1
+    }    
+}
