@@ -20,6 +20,8 @@ img {
 }
 @media screen and (max-width: 770px) {
 	.collapse {
+        max-height: calc(100vh - 60px);
         backdrop-filter: blur(20px);
+        overflow-y: auto;
     }
 }
